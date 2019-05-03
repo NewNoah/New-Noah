@@ -11,4 +11,6 @@ public class JSON
     public float lat;
     public float lon;
     public float ele;
+    public float x;
+    public float y;
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 public class LabelsController : MonoBehaviour
 {
@@ -11,9 +12,4 @@ public class LabelsController : MonoBehaviour
     [Header("Stats")]
     public GameObject temperature;
     public GameObject humidity;
-
-    private void Update()
-    {
-        
-    }
 }
