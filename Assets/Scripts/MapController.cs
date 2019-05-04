@@ -17,15 +17,15 @@ public class MapController : MonoBehaviour
         _mapWidth = 218f;
         _mapHeight = 198f;
         
-        InvokeRepeating(nameof(DebugLog), 0, 10f);
+        InvokeRepeating(nameof(DebugLog), 0, 1f);
     }
 
     private void Update()
     {
         try
         {
-            _x = Grabber.jsonClass.x;
-            _y = Grabber.jsonClass.y;
+            _x = Grabber.jsonClass_pos.x_val;
+            _y = Grabber.jsonClass_pos.y_val;
         }
         catch
         {

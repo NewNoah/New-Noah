@@ -1,8 +1,7 @@
 ﻿using System;
-using UnityEngine;
 
 [Serializable]
-public class JSON
+public class JSON_POS
 {
     public int timestamp;
     public int shelter_id;
@@ -10,7 +9,7 @@ public class JSON
     public int pet_id;
     public float lat;
     public float lon;
-    public float ele;
     public float x_val;
     public float y_val;
+    public float x_real;
 }

@@ -8,12 +8,10 @@ public class SwapLiveButton : MonoBehaviour
     public Sprite liveOffSprite;
     public GameObject isLiveText;
 
-    private bool _isLive;
-
     public void SwapButtonSprite(GameObject button)
     {
-        _isLive = !_isLive;
-        button.GetComponent<Image>().sprite = _isLive ? liveOnSprite : liveOffSprite;
-        isLiveText.GetComponent<TextMeshProUGUI>().text = _isLive ? "Live" : "History";
+        Grabber.isLive = !Grabber.isLive;
+        button.GetComponent<Image>().sprite = Grabber.isLive ? liveOnSprite : liveOffSprite;
+        isLiveText.GetComponent<TextMeshProUGUI>().text = Grabber.isLive ? "Live" : "History";
     }
 }
